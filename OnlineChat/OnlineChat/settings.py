@@ -25,7 +25,7 @@ SECRET_KEY = 'a14qk)snz^f_sx#$w76u6*5y8m82^56voyhyosw!knk=f@j$#&'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['*']
 
 
 # Application definition
@@ -37,11 +37,18 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+
+    'django_summernote',
+
+    'rest_framework',
+    'rest_framework.authtoken',
+    'djoser',
 ]
 
 MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',
     'django.contrib.sessions.middleware.SessionMiddleware',
+   # 'corsheaders.middleware.CorsMiddleware'         #
     'django.middleware.common.CommonMiddleware',
     'django.middleware.csrf.CsrfViewMiddleware',
     'django.contrib.auth.middleware.AuthenticationMiddleware',
@@ -74,12 +81,12 @@ WSGI_APPLICATION = 'OnlineChat.wsgi.application'
 # Database
 # https://docs.djangoproject.com/en/2.2/ref/settings/#databases
 
-DATABASES = {
-    'default': {
-        'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': os.path.join(BASE_DIR, 'db.sqlite3'),
-    }
-}
+# DATABASES = {
+#     'default': {
+#         'ENGINE': 'django.db.backends.sqlite3',
+#         'NAME': os.path.join(BASE_DIR, 'db.sqlite3'),
+#     }
+# }
 
 
 # Password validation
@@ -104,7 +111,7 @@ AUTH_PASSWORD_VALIDATORS = [
 # Internationalization
 # https://docs.djangoproject.com/en/2.2/topics/i18n/
 
-LANGUAGE_CODE = 'en-us'
+LANGUAGE_CODE = 'ru-ru'
 
 TIME_ZONE = 'UTC'
 
@@ -114,8 +121,49 @@ USE_L10N = True
 
 USE_TZ = True
 
+SITE = 1
 
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/2.2/howto/static-files/
 
 STATIC_URL = '/static/'
+STATIC_DIR = os.path.join(BASE_DIR, 'static')
+
+MEDIA_URL = '/media/'
+MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
+
+
+
+REST_FRAMEWORK = {
+    'DEFAULT_PERMISSION_CLASSES': (
+        'rest_framework.permissions.IsAdminUser',               # доступ только администратору
+        'rest_framework.permissions.AllowAny',                  # доступ кому угодно
+    ),
+    'PAGE_SIZE': 10,                                            # показ 10стр, например
+    'DEFAULT_AUTHENTICATION_CLASSES': (
+        # 'rest_framework_jwt.authentication.JSONWebTokenAuthentication',
+        'rest_framework.authentication.TokenAuthentication',
+        'rest_framework.authentication.BasicAuthentication',
+        'rest_framework.authentication.SessionAuthentication',  # нужно, чтобы могли зайти в админку джанго(??)
+    ),
+    'EXCEPTION_HANDLER': 'rest_framework_json_api.exceptions.exception_handler',
+    'DEFAULT_PAGINATION_CLASS':
+        'rest_framework_json_api.pagination.PageNumberPagination',
+    'DEFAULT_PARSER_CLASSES': (
+        'rest_framework_json_api.parsers.JSONParser',
+        'rest_framework.parsers.FormParser',
+        'rest_framework.parsers.MultiPartParser'
+    ),
+    'DEFAULT_RENDERER_CLASSES': (
+        'rest_framework_json_api.renderers.JSONRenderer',       # все, что будем отправлять/принимать будет идти через json
+        'rest_framework.renderers.BrowsableAPIRenderer',
+    ),
+    'DEFAULT_METADATA_CLASS': 'rest_framework_json_api.metadata.JSONAPIMetadata',
+}
+
+CORS_ORIGIN_ALLOW_ALL = True    # все запросы, которые идут на бэекенд разрешены
+
+try:                                                # так же брать настройки в локале и продакшене
+    from .local_settings import *
+except ImportError:
+    from .prod_settings import *
