@@ -1,13 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="d0a3d18b-c038-44b1-acdc-faa25af0dd7a" name="Default Changelist" comment="chat_room models and serializer added">
+    <list default="true" id="d0a3d18b-c038-44b1-acdc-faa25af0dd7a" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/chat-vue/src/components/Home.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/chat-vue/src/components/Login.vue" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/OnlineChat/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/OnlineChat/urls.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/chat_room/admin.py" beforeDir="false" afterPath="$PROJECT_DIR$/chat_room/admin.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/chat_room/serializers.py" beforeDir="false" afterPath="$PROJECT_DIR$/chat_room/serializers.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/chat_room/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/chat_room/urls.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/chat_room/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/chat_room/views.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/OnlineChat/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/OnlineChat/settings.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/chat-vue/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/chat-vue/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/chat-vue/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/chat-vue/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/chat-vue/src/App.vue" beforeDir="false" afterPath="$PROJECT_DIR$/chat-vue/src/App.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/chat-vue/src/components/HelloWorld.vue" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/chat-vue/src/main.js" beforeDir="false" afterPath="$PROJECT_DIR$/chat-vue/src/main.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/chat-vue/src/router/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/chat-vue/src/router/index.js" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -54,122 +58,104 @@
           <entry key="editorconfig" value="1" />
           <entry key="gitignore" value="55" />
           <entry key="html" value="45" />
-          <entry key="js" value="28" />
-          <entry key="py" value="4110" />
-          <entry key="txt" value="608" />
-          <entry key="vue" value="253" />
+          <entry key="js" value="197" />
+          <entry key="py" value="4111" />
+          <entry key="txt" value="700" />
+          <entry key="vue" value="1351" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
           <entry key="HTML" value="45" />
-          <entry key="JavaScript" value="28" />
-          <entry key="PLAIN_TEXT" value="664" />
-          <entry key="Python" value="4110" />
-          <entry key="Vue.js" value="253" />
+          <entry key="JavaScript" value="197" />
+          <entry key="PLAIN_TEXT" value="756" />
+          <entry key="Python" value="4111" />
+          <entry key="Vue.js" value="1351" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
         <counts>
           <entry key="editorconfig" value="1" />
           <entry key="gitignore" value="2" />
-          <entry key="html" value="2" />
-          <entry key="js" value="2" />
-          <entry key="json" value="1" />
+          <entry key="html" value="3" />
+          <entry key="js" value="6" />
+          <entry key="json" value="2" />
           <entry key="md" value="1" />
-          <entry key="py" value="20" />
+          <entry key="py" value="21" />
           <entry key="sql" value="4" />
-          <entry key="txt" value="1" />
-          <entry key="vue" value="3" />
+          <entry key="txt" value="2" />
+          <entry key="vue" value="9" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
-          <entry key="HTML" value="2" />
-          <entry key="JSON" value="1" />
-          <entry key="JavaScript" value="2" />
+          <entry key="HTML" value="3" />
+          <entry key="JSON" value="2" />
+          <entry key="JavaScript" value="6" />
           <entry key="Markdown" value="1" />
-          <entry key="PLAIN_TEXT" value="6" />
-          <entry key="Python" value="20" />
+          <entry key="PLAIN_TEXT" value="7" />
+          <entry key="Python" value="21" />
           <entry key="Scratch" value="4" />
-          <entry key="Vue.js" value="1" />
+          <entry key="Vue.js" value="7" />
         </counts>
       </usages-collector>
     </session>
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/chat_room/views.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="253">
-              <caret line="11" column="7" lean-forward="true" selection-start-line="11" selection-start-column="7" selection-end-line="11" selection-end-column="7" />
-              <folding>
-                <element signature="e#0#86#0" expanded="true" />
-                <marker date="1560604382564" expanded="true" signature="708:713" ph="..." />
-                <marker date="1560604382564" expanded="true" signature="1255:1264" ph="..." />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/OnlineChat/settings.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="331">
-              <caret line="46" column="16" selection-start-line="46" selection-start-column="16" selection-end-line="46" selection-end-column="16" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/OnlineChat/urls.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="344">
-              <caret line="21" column="87" selection-start-line="21" selection-start-column="87" selection-end-line="21" selection-end-column="87" />
-              <folding>
-                <element signature="e#634#666#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/chat_room/urls.py">
+        <entry file="file://$PROJECT_DIR$/chat-vue/index.html">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="115">
-              <caret line="5" column="16" selection-start-line="5" selection-start-column="16" selection-end-line="5" selection-end-column="16" />
+              <caret line="5" column="26" selection-start-line="5" selection-start-column="26" selection-end-line="5" selection-end-column="26" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/chat-vue/src/App.vue">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="46">
+              <caret line="2" column="86" selection-start-line="2" selection-start-column="86" selection-end-line="2" selection-end-column="86" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/chat-vue/src/router/index.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="391">
+              <caret line="17" column="22" selection-start-line="17" selection-start-column="22" selection-end-line="17" selection-end-column="22" />
               <folding>
-                <element signature="e#0#28#0" expanded="true" />
+                <element signature="e#0#21#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/chat_room/admin.py">
+        <entry file="file://$PROJECT_DIR$/chat-vue/src/components/Home.vue">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="528">
-              <caret line="24" column="35" selection-start-line="24" selection-start-column="35" selection-end-line="24" selection-end-column="35" />
-              <folding>
-                <element signature="e#0#32#0" expanded="true" />
-                <marker date="1560593502662" expanded="true" signature="506:589" ph="..." />
-              </folding>
+            <state relative-caret-position="322">
+              <caret line="14" column="3" lean-forward="true" selection-start-line="10" selection-start-column="2" selection-end-line="14" selection-end-column="3" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/chat-vue/src/components/Login.vue">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="352">
+              <caret line="29" column="44" selection-start-line="29" selection-start-column="44" selection-end-line="29" selection-end-column="44" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/chat_room/serializers.py">
+        <entry file="file://$PROJECT_DIR$/chat-vue/src/main.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="321">
-              <caret line="35" column="25" selection-start-line="35" selection-start-column="6" selection-end-line="35" selection-end-column="25" />
-              <folding>
-                <element signature="e#0#38#0" expanded="true" />
-                <marker date="1560594298179" expanded="true" signature="289:290" ph="..." />
-                <marker date="1560594298179" expanded="true" signature="341:346" ph="..." />
-                <marker date="1560594298179" expanded="true" signature="637:642" ph="..." />
-              </folding>
+            <state relative-caret-position="115">
+              <caret line="8" column="27" selection-start-line="8" selection-start-column="27" selection-end-line="8" selection-end-column="27" />
             </state>
           </provider>
         </entry>
@@ -180,6 +166,8 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="Python Script" />
+        <option value="JavaScript File" />
+        <option value="Vue Single File Component" />
       </list>
     </option>
   </component>
@@ -195,16 +183,20 @@
         <option value="$PROJECT_DIR$/OnlineChat/local_settings.py" />
         <option value="$PROJECT_DIR$/chat-vue/.editorconfig" />
         <option value="$PROJECT_DIR$/chat-vue/index.html" />
-        <option value="$PROJECT_DIR$/chat-vue/src/main.js" />
-        <option value="$PROJECT_DIR$/chat-vue/src/App.vue" />
-        <option value="$PROJECT_DIR$/chat-vue/src/components/HelloWorld.vue" />
-        <option value="$PROJECT_DIR$/OnlineChat/settings.py" />
         <option value="$PROJECT_DIR$/chat_room/models.py" />
         <option value="$PROJECT_DIR$/chat_room/urls.py" />
         <option value="$PROJECT_DIR$/chat_room/admin.py" />
         <option value="$PROJECT_DIR$/chat_room/serializers.py" />
         <option value="$PROJECT_DIR$/OnlineChat/urls.py" />
         <option value="$PROJECT_DIR$/chat_room/views.py" />
+        <option value="$PROJECT_DIR$/chat-vue/src/main.js" />
+        <option value="$PROJECT_DIR$/chat-vue/src/components/HelloWorld.vue" />
+        <option value="$PROJECT_DIR$/chat-vue/src/components/Home.js" />
+        <option value="$PROJECT_DIR$/chat-vue/src/router/index.js" />
+        <option value="$PROJECT_DIR$/chat-vue/src/App.vue" />
+        <option value="$PROJECT_DIR$/chat-vue/src/components/Home.vue" />
+        <option value="$PROJECT_DIR$/OnlineChat/settings.py" />
+        <option value="$PROJECT_DIR$/chat-vue/src/components/Login.vue" />
       </list>
     </option>
   </component>
@@ -241,6 +233,11 @@
             <path>
               <item name="OnlineChat" type="b2602c69:ProjectViewProjectNode" />
               <item name="OnlineChat" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="OnlineChat" type="b2602c69:ProjectViewProjectNode" />
+              <item name="OnlineChat" type="462c0819:PsiDirectoryNode" />
+              <item name="chat-vue" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="OnlineChat" type="b2602c69:ProjectViewProjectNode" />
@@ -338,19 +335,26 @@
       <option name="project" value="LOCAL" />
       <updated>1560274146321</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="post message, djoser authorization and some serializers added">
+      <created>1560606567342</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1560606567342</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1096" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.17135416" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.17135416" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.34020618" />
+      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.34020618" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -359,7 +363,7 @@
       <window_info anchor="bottom" id="Version Control" order="8" show_stripe_button="false" />
       <window_info anchor="bottom" id="Database Changes" order="9" weight="0.3298969" />
       <window_info anchor="bottom" id="Event Log" order="10" side_tool="true" weight="0.3298969" />
-      <window_info anchor="bottom" x="3" y="383" width="1914" height="314" id="Terminal" order="11" weight="0.32978722" />
+      <window_info anchor="bottom" x="3" y="383" width="1914" height="314" id="Terminal" order="11" weight="0.32886598" />
       <window_info anchor="bottom" id="Python Console" order="12" />
       <window_info anchor="right" id="SciView" order="0" />
       <window_info anchor="right" id="Commander" order="1" weight="0.4" />
@@ -379,7 +383,8 @@
     <MESSAGE value="test commit" />
     <MESSAGE value="vue setting pt1" />
     <MESSAGE value="chat_room models and serializer added" />
-    <option name="LAST_COMMIT_MESSAGE" value="chat_room models and serializer added" />
+    <MESSAGE value="post message, djoser authorization and some serializers added" />
+    <option name="LAST_COMMIT_MESSAGE" value="post message, djoser authorization and some serializers added" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/.gitignore">
@@ -402,21 +407,11 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/chat-vue/package.json">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
     <entry file="file://$PROJECT_DIR$/chat-vue/README.md">
       <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
         <state split_layout="SPLIT">
           <first_editor />
           <second_editor />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/chat-vue/src/main.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="138">
-          <caret line="9" column="37" selection-start-line="9" selection-start-column="37" selection-end-line="9" selection-end-column="37" />
         </state>
       </provider>
     </entry>
@@ -429,41 +424,6 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/OnlineChat/prod_settings.py">
       <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/req.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="414">
-          <caret line="18" column="68" selection-start-line="18" selection-start-column="68" selection-end-line="18" selection-end-column="68" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/chat-vue/src/App.vue">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="299">
-          <caret line="13" column="37" selection-start-line="13" selection-start-column="37" selection-end-line="13" selection-end-column="37" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/chat-vue/src/components/HelloWorld.vue">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="276">
-          <caret line="96" column="92" selection-start-line="96" selection-start-column="92" selection-end-line="96" selection-end-column="92" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/chat-vue/src/router/index.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="322">
-          <caret line="14" column="2" selection-start-line="14" selection-start-column="2" selection-end-line="14" selection-end-column="2" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/chat-vue/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="115">
-          <caret line="5" column="26" selection-start-line="5" selection-start-column="26" selection-end-line="5" selection-end-column="26" />
-        </state>
-      </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/chat_room/models.py">
       <provider selected="true" editor-type-id="text-editor">
@@ -484,13 +444,6 @@
             <element signature="e#0#32#0" expanded="true" />
             <marker date="1560593502662" expanded="true" signature="506:589" ph="..." />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/OnlineChat/settings.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="331">
-          <caret line="46" column="16" selection-start-line="46" selection-start-column="16" selection-end-line="46" selection-end-column="16" />
         </state>
       </provider>
     </entry>
@@ -529,13 +482,85 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/chat_room/views.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="253">
+        <state relative-caret-position="-70">
           <caret line="11" column="7" lean-forward="true" selection-start-line="11" selection-start-column="7" selection-end-line="11" selection-end-column="7" />
           <folding>
             <element signature="e#0#86#0" expanded="true" />
             <marker date="1560604382564" expanded="true" signature="708:713" ph="..." />
             <marker date="1560604382564" expanded="true" signature="1255:1264" ph="..." />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/chat-vue/src/components/HelloWorld.vue">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="667">
+          <caret line="83" column="11" lean-forward="true" selection-start-line="83" selection-start-column="11" selection-end-line="83" selection-end-column="11" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/chat-vue/src/components/Home.js">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/req.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="414">
+          <caret line="18" column="68" selection-start-line="18" selection-start-column="68" selection-end-line="18" selection-end-column="68" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/chat-vue/package.json">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/chat-vue/src/router/index.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="391">
+          <caret line="17" column="22" selection-start-line="17" selection-start-column="22" selection-end-line="17" selection-end-column="22" />
+          <folding>
+            <element signature="e#0#21#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/chat-vue/src/main.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="115">
+          <caret line="8" column="27" selection-start-line="8" selection-start-column="27" selection-end-line="8" selection-end-column="27" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/chat-vue/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="115">
+          <caret line="5" column="26" selection-start-line="5" selection-start-column="26" selection-end-line="5" selection-end-column="26" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/OnlineChat/settings.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="400">
+          <caret line="52" column="43" selection-start-line="52" selection-start-column="43" selection-end-line="52" selection-end-column="43" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/chat-vue/src/App.vue">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="46">
+          <caret line="2" column="86" selection-start-line="2" selection-start-column="86" selection-end-line="2" selection-end-column="86" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/chat-vue/src/components/Home.vue">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="322">
+          <caret line="14" column="3" lean-forward="true" selection-start-line="10" selection-start-column="2" selection-end-line="14" selection-end-column="3" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/chat-vue/src/components/Login.vue">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="352">
+          <caret line="29" column="44" selection-start-line="29" selection-start-column="44" selection-end-line="29" selection-end-column="44" />
         </state>
       </provider>
     </entry>

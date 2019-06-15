@@ -1,11 +1,11 @@
 <template> <!-- весь html который будет -->
   <div id="app">
-    <img src="./assets/logo.png">
-    <router-view/>
+    <router-view/>      <!-- обрабатывает ВСЕ рауты, они будут содержаться в этом диве -->
   </div>
 </template>
 
 <!-- дается название компоненту для экспорта и логика -->
+
 <script>
 export default {
   name: 'App'
