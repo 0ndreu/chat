@@ -30,6 +30,7 @@
                     success: (response) => {
                         alert("correct!")
                         sessionStorage.setItem('auth_token', response.data.attributes.auth_token)   // .data.attributes - путь до auth_token
+                        this.$router.push({name:'home'})
                     },
                     error: (response) => {
                         if (response.status === 400) {
