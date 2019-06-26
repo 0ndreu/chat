@@ -22,7 +22,7 @@ class Dialog(APIView):
     # permission_classes = [permissions.AllowAny, ]  # права лоступа к диалогам
 
     def get(self, request):
-        room = request.GET.get('room')     # получаем комнату. Когда будет post, вместо GET будем писать DATA
+        room = request.GET.get('room')     # получаем комнату
         chat = Chat.objects.filter(room=room)        # дата передает номер комнаты, и по ней фильтруем
         serializer = ChatSerializers(chat, many=True)
         return Response({'data': serializer.data})

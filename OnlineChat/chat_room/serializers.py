@@ -3,6 +3,9 @@ from django.contrib.auth.models import User
 
 from .models import Room, Chat
 
+"""
+получаем данные из бд в json и наоборот
+"""
 
 class UserSerializer(serializers.ModelSerializer):
     """
@@ -16,13 +19,13 @@ class UserSerializer(serializers.ModelSerializer):
 
 class RoomSerializers(serializers.ModelSerializer):
     """
-    Сериализация комнат чата (получем данные из БД в json и наоборот)
+    Сериализация комнат чата
     """
     creator = UserSerializer()
     invited = UserSerializer(many=True)
     class Meta:
         model = Room
-        fields = ('creator', 'invited', 'date')
+        fields = ('id', 'creator', 'invited', 'date')
 
 
 class ChatSerializers(serializers.ModelSerializer):
