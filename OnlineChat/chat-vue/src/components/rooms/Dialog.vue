@@ -1,11 +1,14 @@
 <template>
-    <div class="dialog">
-        <div v-for="dialog in dialogs" v-bind:key="dialog">
-            <h2>{{dialog.user.username}}</h2>
-            <p>{{dialog.text}}</p>
-            <span>{{dialog.date}}</span>
-        </div>
-    </div>
+    <mu-col span="8" xl='10' class="dialog">
+        <mu-container>
+            <mu-raw direction="column" justify-content="start" align-items="end"
+                    v-for="dialog in dialogs" v-bind:key="dialog">
+                <p><strong>{{dialog.user.username}}</strong></p>
+                <p>{{dialog.text}}</p>
+                <span>{{dialog.date}}</span>
+            </mu-raw>
+        </mu-container>
+    </mu-col>
 </template>
 
 <script>
@@ -17,19 +20,19 @@
         props: {
             id: ''
         },
-        data () {
+        data() {
             return {
                 dialogs: '',
             }
         },
-        created () {
+        created() {
             $.ajaxSetup({
-                    headers: {'Authorization': 'Token ' + sessionStorage.getItem('auth_token')} // так как нужен токен для диалогов
-                });
-             this.loadDialog()
+                headers: {'Authorization': 'Token ' + sessionStorage.getItem('auth_token')} // так как нужен токен для диалогов
+            });
+            this.loadDialog()
         },
         methods: {
-            loadDialog () {
+            loadDialog() {
                 $.ajax({
                     url: 'http://127.0.0.1:8000/api/v1/chat/dialog/',
                     type: 'GET',
@@ -47,8 +50,6 @@
 
 <style scoped>
     .dialog {
-        width: 70%;
-        height: 100px;
         border: 1px solid #000;
     }
 </style>

@@ -1,11 +1,18 @@
 <template>
-    <div>
-        <h1>Чат на Vue-js</h1>
-        <button @click="goLogin" v-if="!auth">Вход</button>
-        <button @click="Logout" v-else>Выход</button>
-        <Room v-if="auth" @openDialog="openDialog"></Room>
-       <Dialog v-if="dialog.show" :id="dialog.id"></Dialog>
-    </div>
+    <mu-container>
+        <mu-appbar style="width: 100%;" color="primary">
+            Здорова, бандиты
+            <mu-button flat slot="right" @click="goLogin" v-if="!auth">Вход</mu-button>
+            <mu-button flat slot="right" @click="Logout" v-else>Выход</mu-button>
+        </mu-appbar>
+        <mu-row>
+            <h3></h3>
+        </mu-row>
+        <mu-row>
+           <Room v-if="auth" @openDialog="openDialog"></Room>
+           <Dialog v-if="dialog.show" :id="dialog.id"></Dialog>
+        </mu-row>
+    </mu-container>
 </template>
 
 <script>

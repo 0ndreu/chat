@@ -1,19 +1,15 @@
 <template>
-    <div>
-        <div>
-            <ul>
-                <li v-for="room in rooms" v-bind:key="room">
-                    <h3 @click="openDialog(room.id)">{{room.creator.username}}</h3>
-                    {{room.date}}
-                </li>
-            </ul>
+    <div span="4" sm="4" xl="2">
+        <div v-for="room in rooms" v-bind:key="room">
+            <h3 @click="openDialog(room.id)">{{room.creator.username}}</h3>
+            <small>{{room.date}}</small>
         </div>
     </div>
 </template>
 
 <script>
 /* eslint-disable */
-import $ from 'jquery'
+    import $ from 'jquery'
 
     export default {
         name: "Room",
@@ -23,14 +19,14 @@ import $ from 'jquery'
 
             }
         },
-        created () {
-             $.ajaxSetup({
-                    headers: {'Authorization': 'Token ' + sessionStorage.getItem('auth_token')}
-                });
-             this.loadRoom()
+        created() {
+            $.ajaxSetup({
+                headers: {'Authorization': 'Token ' + sessionStorage.getItem('auth_token')}
+            });
+            this.loadRoom()
         },
         methods: {
-            loadRoom () {
+            loadRoom() {
                 $.ajax({
                     url: 'http://127.0.0.1:8000/api/v1/chat/room/',
                     type: 'GET',
@@ -47,7 +43,7 @@ import $ from 'jquery'
 </script>
 
 <style scoped>
-    h3{
-      cursor: pointer;
+    h3 {
+        cursor: pointer;
     }
 </style>
