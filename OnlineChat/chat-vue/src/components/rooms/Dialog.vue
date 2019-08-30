@@ -1,5 +1,6 @@
 <template>
     <mu-col span="8" xl='9'>
+        <AddUsers :room="id"></AddUsers>
         <mu-container class="dialog">
             <mu-row direction="column"
                     justify-content="start"
@@ -18,7 +19,7 @@
                                full-width
                                placeholder="Input your message">
                 </mu-text-field>
-                <mu-button round color="success">send</mu-button>
+                <mu-button round color="success" @click="sendMes">send</mu-button>
             </mu-row>
         </mu-container>
     </mu-col>
@@ -26,12 +27,15 @@
 
 <script>
 /* eslint-disable */
-    import $ from 'jquery'
 
+import AddUsers from './AddUsers'
     export default {
         name: "Dialog",
         props: {
-            id: ''
+            id: '' // присылается сюда ИД комнаты, а потом его кладем в <AddUsers>
+        },
+        components: {
+            AddUsers
         },
         data() {
             return {
@@ -46,6 +50,9 @@
                 headers: {'Authorization': 'Token ' + sessionStorage.getItem('auth_token')} // так как нужен токен для диалогов
             });
             this.loadDialog()
+            setInterval(() => {
+                this.loadDialog()
+            }, 5000)
         },
         methods: {
             loadDialog() {
@@ -59,6 +66,24 @@
                         this.dialogs = response.data.data
                     }
                 })
+            },
+            sendMes() {
+                $.ajax({
+                    url: 'http://127.0.0.1:8000/api/v1/chat/dialog/',
+                    type: 'POST',
+                    data: {
+                        room: this.id,
+                        text: this.form.textarea
+                    },
+                    success: (response) => {
+                        this.loadDialog()
+                        form.textarea.text = ''
+                    },
+                    error: (response) => {
+                        alert(response.statusText)
+                    }
+                })
+
             }
         }
     }
